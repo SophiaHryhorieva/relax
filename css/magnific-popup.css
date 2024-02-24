@@ -1,3 +1,4 @@
+/* Magnific Popup CSS */
 .mfp-bg {
   top: 0;
   left: 0;
@@ -33,7 +34,7 @@
 }
 
 .mfp-container:before {
-  content: "";
+  content: '';
   display: inline-block;
   height: 100%;
   vertical-align: middle;
@@ -64,9 +65,15 @@
 
 .mfp-zoom-out-cur,
 .mfp-zoom-out-cur .mfp-image-holder .mfp-close {
-  cursor: pointer;
   cursor: -moz-zoom-out;
+  cursor: -webkit-zoom-out;
+  cursor: zoom-out;
+}
+
+.mfp-zoom {
+  cursor: pointer;
   cursor: -webkit-zoom-in;
+  cursor: -moz-zoom-in;
   cursor: zoom-in;
 }
 
@@ -92,7 +99,7 @@
 }
 
 .mfp-preloader {
-  color: #ccc;
+  color: #CCC;
   position: absolute;
   top: 50%;
   width: auto;
@@ -102,11 +109,13 @@
   right: 8px;
   z-index: 1044;
 }
+
 .mfp-preloader a {
-  color: #ccc;
+  color: #CCC;
 }
+
 .mfp-preloader a:hover {
-  color: #fff;
+  color: #FFF;
 }
 
 .mfp-s-ready .mfp-preloader {
@@ -132,7 +141,7 @@ button.mfp-arrow {
   touch-action: manipulation;
 }
 
-buton::-moz-focus-inner {
+button::-moz-focus-inner {
   padding: 0;
   border: 0;
 }
@@ -148,7 +157,7 @@ buton::-moz-focus-inner {
   text-align: center;
   opacity: 0.65;
   padding: 0 0 18px 10px;
-  color: #fff;
+  color: #FFF;
   font-style: normal;
   font-size: 28px;
   font-family: Arial, Baskerville, monospace;
@@ -168,8 +177,8 @@ buton::-moz-focus-inner {
 }
 
 .mfp-image-holder .mfp-close,
-.mfp-iframe-holder.mfp-close {
-  color: #fff;
+.mfp-iframe-holder .mfp-close {
+  color: #FFF;
   right: -6px;
   text-align: right;
   padding-right: 6px;
@@ -180,7 +189,7 @@ buton::-moz-focus-inner {
   position: absolute;
   top: 0;
   right: 0;
-  color: #ccc;
+  color: #CCC;
   font-size: 12px;
   line-height: 18px;
   white-space: nowrap;
@@ -209,7 +218,7 @@ buton::-moz-focus-inner {
 
 .mfp-arrow:before,
 .mfp-arrow:after {
-  content: "";
+  content: '';
   display: block;
   width: 0;
   height: 0;
@@ -238,13 +247,13 @@ buton::-moz-focus-inner {
 }
 
 .mfp-arrow-left:after {
-  border-right: 17px solid #fff;
+  border-right: 17px solid #FFF;
   margin-left: 31px;
 }
 
 .mfp-arrow-left:before {
   margin-left: 25px;
-  border-right: 27px solid #3f3f3f;
+  border-right: 27px solid #3F3F3F;
 }
 
 .mfp-arrow-right {
@@ -252,12 +261,12 @@ buton::-moz-focus-inner {
 }
 
 .mfp-arrow-right:after {
-  border-left: 17px solid #fff;
+  border-left: 17px solid #FFF;
   margin-left: 39px;
 }
 
 .mfp-arrow-right:before {
-  border-left: 27px solid #3f3f3f;
+  border-left: 27px solid #3F3F3F;
 }
 
 .mfp-iframe-holder {
@@ -293,6 +302,7 @@ buton::-moz-focus-inner {
   background: #000;
 }
 
+/* Main image in popup */
 img.mfp-img {
   width: auto;
   max-width: 100%;
@@ -304,12 +314,13 @@ img.mfp-img {
   margin: 0 auto;
 }
 
+/* The shadow behind the image */
 .mfp-figure {
   line-height: 0;
 }
 
 .mfp-figure:after {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   top: 40px;
@@ -324,7 +335,7 @@ img.mfp-img {
 }
 
 .mfp-figure small {
-  color: #8d8d8d;
+  color: #BDBDBD;
   display: block;
   font-size: 12px;
   line-height: 14px;
@@ -343,10 +354,10 @@ img.mfp-img {
   cursor: auto;
 }
 
-.mfp-little {
+.mfp-title {
   text-align: left;
   line-height: 18px;
-  color: #f3f3f3;
+  color: #F3F3F3;
   word-wrap: break-word;
   padding-right: 36px;
 }
@@ -360,7 +371,8 @@ img.mfp-img {
 }
 
 @media screen and (max-width: 800px) and (orientation: landscape),
-  screen and (max-height: 300px) {
+screen and (max-height: 300px) {
+
   .mfp-img-mobile .mfp-image-holder {
     padding-left: 0;
     padding-right: 0;
@@ -432,4 +444,4 @@ img.mfp-img {
     padding-left: 6px;
     padding-right: 6px;
   }
-} 
+}
