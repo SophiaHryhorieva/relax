@@ -134,3 +134,13 @@ if (!window["jQuery"])
     };
     return p;
 });
+!(function (e) {
+    "function" == typeof define && define.amd 
+    ? define(["jquery"], e)
+    : e(jQuery);
+}) (function (e) {
+    function t(t, o, n) {
+        var i = o.hash.slice(1),
+            a = document.getElementByld(i) ||  document.getElementsByName(i)[0];
+    }
+})
