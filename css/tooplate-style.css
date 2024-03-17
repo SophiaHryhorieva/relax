@@ -287,3 +287,45 @@ footer {
   background: #3d3d3d;
   color: #ffffff;
 }
+
+footer {
+  background: #000000;
+}
+
+footer h4 {
+  color: #f9f9f9;
+}
+
+footer a {
+  color: #aaa;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+footer .col--md-4 .support-cus:last-child {
+  padding-top: 12px;
+}
+
+footer .col-md-4 .support-cus p {
+  line-height: 20px;
+}
+
+footer .newsletter .form-control {
+  box-shadow: none;
+  transition: all 0.4s ease-in-out;
+  margin-top: 16px;
+  margin-bottom: 2px;
+}
+
+footer .newsletter .form-control:focus {
+  border-bottom-color: #f2f2f2;
+}
+
+footer .newsletter input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #f0f0f0;
+  border-radius: 0px;
+}
